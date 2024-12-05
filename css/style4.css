@@ -29,21 +29,26 @@ header {
 }
 
 .navigation {
-
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 300px;
-	margin-right: 50px;
+  display: flex;
+  justify-content: center; /* Centre les boutons horizontalement */
+  gap: 10px; /* Ajoute un espace constant entre chaque bouton */
 }
 
 .navigation a {
-
-	font-size: 20px;
-	color: #4D4D4D;
-	font-family: 'Roboto';
-	text-decoration: none;
+  text-decoration: none;
+  padding: 10px 20px; /* Ajoute de l'espace intérieur pour chaque bouton */
+  border: 1px solid #fff; /* Bordure blanche */
+  color: #fff;
+  background-color: transparent; /* Fond transparent */
+  border-radius: 5px; /* Angles arrondis */
+  transition: background-color 0.3s, color 0.3s; /* Effet au survol */
 }
+
+.navigation a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 
 .content-title {
 
