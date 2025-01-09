@@ -76,12 +76,11 @@
 }
 
 .navigation {
-	display: flex;
+	display: flex; /* Disposition en ligne */
 	align-items: center;
 	margin-top: 30px;
-	gap: 20px; /* Ajoute un espacement de 20px entre chaque lien */
-	max-width: fit-content; /* Ajuste la largeur en fonction du contenu total */
-	height: 100px;
+	gap: 20px; /* Espacement uniforme entre les liens */
+	width: 100%; /* La navigation occupe toute la largeur */
 	justify-content: center; /* Centre les cases horizontalement */
 }
 
@@ -90,7 +89,7 @@
 	font-size: 15px;
 	font-family: 'Roboto';
 	color: white;
-	padding: 15px;
+	padding: 15px 20px; /* Ajout d'un espacement interne horizontal */
 	border: solid 2px white;
 	transition: 0.2s;
 }
@@ -100,6 +99,7 @@
 	color: #4D4D4D;
 	transition: 0.2s;
 }
+
 
 
 .presentation-content {
