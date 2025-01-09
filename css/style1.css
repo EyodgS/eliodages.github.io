@@ -76,17 +76,16 @@
 }
 
 .navigation {
-
 	display: flex;
 	align-items: center;
 	margin-top: 30px;
-	max-width: 350px;
+	gap: 20px; /* Ajoute un espacement de 20px entre chaque lien */
+	max-width: fit-content; /* Ajuste la largeur en fonction du contenu total */
 	height: 100px;
-	justify-content: space-between;
+	justify-content: center; /* Centre les cases horizontalement */
 }
 
 .navigation a {
-
 	text-decoration: none;
 	font-size: 15px;
 	font-family: 'Roboto';
@@ -97,13 +96,11 @@
 }
 
 .navigation a:hover {
-
 	background: white;
 	color: #4D4D4D;
-	padding: 15px;
-	border: solid 2px white;
 	transition: 0.2s;
 }
+
 
 .presentation-content {
 
