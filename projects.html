@@ -1,45 +1,146 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>Projets - Elio DAGES</title>
-  <link rel="stylesheet" href="css/style1.css"> <!-- Inclut le fichier de style global -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Red+Hat+Display&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .project {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+        .project h2 {
+            color: #0056b3;
+        }
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding: 20px 0;
+        }
+        .timeline-item {
+            text-align: center;
+            flex: 1;
+            position: relative;
+        }
+        .timeline-item:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -50%;
+            width: 100%;
+            height: 2px;
+            background: #0056b3;
+            transform: translateY(-50%);
+            z-index: -1;
+        }
+        .timeline-icon {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 10px;
+            background: #0056b3;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+        .timeline-date {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 <body>
-  <div class="header">
-    <p>Elio <span>Dages</span></p>
-  </div>
+    <div class="container">
+        <h1>Projets</h1>
 
-  <section class="projects-page">
-    <h1>Mes Projets</h1>
-    <div class="projects-container">
-      <!-- Projet 1 -->
-      <div class="project-card">
-        <img src="images/project1.jpg" alt="Projet 1">
-        <div class="project-content">
-          <h2>Projet 1 : Gestion d'Entreprise</h2>
-          <p>Ce projet consiste à développer une application web de gestion d'entreprise incluant la gestion des stocks, des employés et des clients.</p>
-          <a href="project1-details.html" class="btn">Voir les détails</a>
+        <!-- Projet 1 -->
+        <div class="project">
+            <h2>ALM/UFT - Test d'un logiciel sur bac à sable</h2>
+            <p>Ce projet consistait à tester et valider un logiciel à l'aide des outils ALM et UFT dans un environnement de bac à sable. Les étapes incluaient : la configuration de l'environnement, la rédaction des cas de tests, l'exécution des tests automatisés et l'analyse des résultats pour optimiser les performances du logiciel.</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">🔧</div>
+                    <div class="timeline-date">03/2023</div>
+                    <p>Préparation de l'environnement</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">✍️</div>
+                    <div class="timeline-date">05/2023</div>
+                    <p>Rédaction des cas de tests</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">🚀</div>
+                    <div class="timeline-date">07/2023</div>
+                    <p>Exécution des tests</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">📊</div>
+                    <div class="timeline-date">09/2023</div>
+                    <p>Analyse des résultats</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Projet 2 -->
-      <div class="project-card">
-        <img src="images/project2.jpg" alt="Projet 2">
-        <div class="project-content">
-          <h2>Projet 2 : Surveillance Réseau</h2>
-          <p>Ce projet vise à mettre en place un système de surveillance réseau pour détecter et alerter en cas d'anomalies ou de failles de sécurité.</p>
-          <a href="project2-details.html" class="btn">Voir les détails</a>
+
+        <!-- Projet 2 -->
+        <div class="project">
+            <h2>Déménagement de l'entreprise</h2>
+            <p>Ce projet majeur a impliqué la planification, la logistique et la mise en place des nouveaux locaux de l'entreprise. Chaque étape a été menée pour assurer une transition fluide et efficace.</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">❓</div>
+                    <div class="timeline-date">01/2022</div>
+                    <p>Lancement du projet</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">📅</div>
+                    <div class="timeline-date">10/2022</div>
+                    <p>Organisation et planification</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">💼</div>
+                    <div class="timeline-date">05/2023</div>
+                    <p>Commande du matériel</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">🏢</div>
+                    <div class="timeline-date">10/2023</div>
+                    <p>Emménagement</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">🔍</div>
+                    <div class="timeline-date">11/2023</div>
+                    <p>Vérifications et stabilisation</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">📢</div>
+                    <div class="timeline-date">2024 →</div>
+                    <p>Maintenance et exploitation</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
-
-  <footer>
-    <p>2023 ® Elio <span>Dages</span></p>
-  </footer>
 </body>
 </html>
-
