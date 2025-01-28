@@ -60,6 +60,58 @@
             font-weight: bold;
         }
 
+        .contact-item {
+            margin-bottom: 20px;
+        }
+
+        .contact-item p {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .contact-item a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .form-section {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .form-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-section input, .form-section textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-section button {
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-section button:hover {
+            background-color: #2980b9;
+        }
+
         footer {
             text-align: center;
             margin-top: 50px;
@@ -68,6 +120,7 @@
             color: white;
             border-radius: 10px;
         }
+
     </style>
 </head>
 <body>
@@ -79,14 +132,44 @@
         </header>
 
         <section class="section">
-            <h2>Contact</h2>
-            <ul class="list">
-                <li><span>LinkedIn :</span> <a href="https://www.linkedin.com/in/elio-dages" target="_blank">https://www.linkedin.com/in/elio-dages</a></li>
-                <li><span>E-mail :</span> <a href="mailto:eliodages@gmail.com">eliodages@gmail.com</a></li>
-                <li><span>Téléphone :</span> <a href="tel:+330662739427">+330662739427</a></li>
-                <li><span>GitHub :</span> <a href="https://eyodgs.github.io/eliodages.github.io/index.html" target="_blank">https://eyodgs.github.io/eliodages.github.io/index.html</a></li>
-                <li><span>Adresse :</span> 123 Rue des Étudiants, 75000 Paris</li>
-            </ul>
+            <h2>Contactez-moi</h2>
+            <p>Vous pouvez me joindre par les moyens suivants :</p>
+
+            <div class="contact-item">
+                <p>LinkedIn :</p>
+                <a href="https://www.linkedin.com/in/elio-dages" target="_blank">https://www.linkedin.com/in/elio-dages</a>
+            </div>
+
+            <div class="contact-item">
+                <p>E-mail :</p>
+                <a href="mailto:eliodages@gmail.com">eliodages@gmail.com</a>
+            </div>
+
+            <div class="contact-item">
+                <p>Téléphone :</p>
+                <a href="tel:+330662739427">+330662739427</a>
+            </div>
+
+            <div class="contact-item">
+                <p>GitHub :</p>
+                <a href="https://eyodgs.github.io/eliodages.github.io/index.html" target="_blank">https://eyodgs.github.io/eliodages.github.io/index.html</a>
+            </div>
+
+            <div class="contact-item">
+                <p>Adresse :</p>
+                <p>123 Rue des Étudiants, 75000 Paris</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Formulaire de Contact</h2>
+            <p>Si vous avez des questions, n'hésitez pas à me contacter via ce formulaire.</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre e-mail" required>
+                <textarea name="message" rows="6" placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer le message</button>
+            </form>
         </section>
 
         <footer>
