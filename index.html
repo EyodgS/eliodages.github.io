@@ -1,44 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>Elio DAGES</title>
-  <link rel="stylesheet" href="css/style1.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Red+Hat+Display&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="header">
-    <p>Elio <span>Dages</span></p>
-  </div>
-  <section class="main-content">
-    <div class="opacity">
-      <div class="title">
-        <p>Elio <span>Dages</span></p>
-        <div class="subtitle">
-          <span>Étudiant en BTS SIO</span>
-        </div>
-        <div class="navigation">
-          <a href="studies.html">Études</a>
-          <a href="skills.html">Compétences</a>
-          <a href="projects.html">Projets</a>
-          <a href="watch.html">Veille</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="presentation-content">
-    <p>Présentation personnelle</p>
-    <div class="presentation-text">
-      <p>Je suis Elio DAGES, un étudiant passionné par l'informatique, en BTS SIO option SISR. Mon objectif est de devenir un professionnel capable de résoudre des problèmes complexes grâce à des solutions informatiques adaptées. J'aime apprendre de nouvelles technologies et relever des défis.</p>
-    </div>
-  </section>
-  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compétences Administrateur Réseaux & Systèmes</title>
+    <title>Veille Informatique - ERP et CRM en Entreprise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Red+Hat+Display&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -48,127 +16,186 @@
         }
 
         body {
-            background-color: #ffffff;
-            color: #333;
+            background-color: #F4F4F9;
+            color: #4D4D4D;
             line-height: 1.6;
         }
 
         .container {
             max-width: 1100px;
-            margin: 20px auto;
+            margin: 0 auto;
             padding: 20px;
-            background: #f8f8f8;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        h1, h2 {
-            color: #000;
-            margin-bottom: 15px;
-        }
-
-        .section {
-            margin-bottom: 40px;
+        .header {
+            background-color: #2C3E50;
+            color: white;
             padding: 20px;
-            background: #e0e0e0;
-            border-radius: 10px;
+            text-align: center;
         }
 
-        .list {
-            list-style: none;
+        .header p {
+            font-size: 36px;
+            font-family: 'Lobster', cursive;
         }
 
-        .list li {
-            margin-bottom: 10px;
-        }
-
-        .list li span {
+        .header span {
+            font-size: 36px;
             font-weight: bold;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .navigation a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navigation a:hover {
+            color: #3498DB;
+        }
+
+        .main-content {
+            background: #ffffff;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .title p {
+            font-size: 32px;
+            text-align: center;
+            font-family: 'Lobster', cursive;
+            margin-bottom: 20px;
+        }
+
+        .subtitle span {
+            font-size: 18px;
+            color: #888;
+        }
+
+        .presentation-content {
+            margin-top: 40px;
+        }
+
+        .presentation-text p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .content-title {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .content-title p {
+            font-size: 28px;
+            font-family: 'Lobster', cursive;
+            color: #2C3E50;
+        }
+
+        .content-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-item p {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .contact-item a {
+            text-decoration: none;
+            color: #3498DB;
+            font-size: 18px;
         }
 
         footer {
             text-align: center;
-            margin-top: 50px;
             padding: 10px;
-            background: #333;
+            background: #2C3E50;
             color: white;
+            margin-top: 40px;
             border-radius: 10px;
         }
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Compétences Réseaux & Systèmes</h1>
-            <p>2025 ® Elio DAGES</p>
-        </header>
 
-        <section class="section">
-            <h2>Administration Système</h2>
-            <ul class="list">
-                <li>Gestion des serveurs Windows et Linux</li>
-                <li>Automatisation avec scripts (Bash, PowerShell, Python)</li>
-                <li>Virtualisation avec VMware, Hyper-V, Proxmox</li>
-                <li>Gestion des utilisateurs et permissions</li>
-                <li>Surveillance et maintenance des systèmes</li>
-            </ul>
-        </section>
-
-        <section class="section">
-            <h2>Administration Réseau</h2>
-            <ul class="list">
-                <li>Configuration et gestion des routeurs et switchs (Cisco, HP, MikroTik)</li>
-                <li>Sécurisation et segmentation des réseaux (VLAN, ACL, Firewall)</li>
-                <li>Protocole TCP/IP, DHCP, DNS, VPN</li>
-                <li>Supervision réseau (SNMP, PRTG, Zabbix)</li>
-                <li>Déploiement et maintenance du Wi-Fi</li>
-            </ul>
-        </section>
-
-        <section class="section">
-            <h2>Sécurité Informatique</h2>
-            <ul class="list">
-                <li>Mise en place et gestion des firewalls (pfSense, Fortinet, Cisco ASA)</li>
-                <li>Protection contre les cyberattaques (EDR, SIEM, IDS/IPS)</li>
-                <li>Gestion des accès et authentifications (AD, MFA, SSO)</li>
-                <li>Chiffrement et sauvegarde des données</li>
-                <li>Plan de reprise et de continuité d’activité (PRA/PCA)</li>
-            </ul>
-        </section>
-
-        <section class="section">
-            <h2>Gestion des Bases de Données</h2>
-            <ul class="list">
-                <li>Installation et maintenance des bases de données (MySQL, PostgreSQL, MSSQL, Oracle)</li>
-                <li>Optimisation des performances et requêtes SQL</li>
-                <li>Sauvegarde et restauration des bases de données</li>
-                <li>Sécurisation des accès aux données</li>
-            </ul>
-        </section>
-
-        <section class="section">
-            <h2>Gestion du Parc Informatique</h2>
-            <ul class="list">
-                <li>Déploiement et maintenance des postes de travail</li>
-                <li>Gestion des licences et des logiciels</li>
-                <li>Supervision et inventaire des équipements</li>
-                <li>Support technique et gestion des tickets</li>
-            </ul>
-        </section>
-
-        <section class="section">
-            <h2>Développement et Automatisation</h2>
-            <ul class="list">
-                <li>Scripts d’automatisation (Python, Bash, PowerShell)</li>
-                <li>Gestion et déploiement via Ansible, Terraform</li>
-                <li>CI/CD avec Git, Jenkins, Docker</li>
-            </ul>
-        </section>
+    <div class="header">
+        <p>Elio <span>Dages</span></p>
     </div>
-</body>
-</html>
-  <footer>
-    <p>2023 ® Elio <span>Dages</span></p>
-  </footer>
+
+    <section class="main-content">
+        <div class="title">
+            <p>Veille Informatique : ERP et CRM en Entreprise</p>
+        </div>
+
+        <section class="presentation-content">
+            <p>Les ERP (Enterprise Resource Planning) et CRM (Customer Relationship Management) jouent un rôle clé dans l'optimisation des processus d'une entreprise. Voici un aperçu de leur impact, des tendances récentes et de leur évolution dans le monde de l'informatique.</p>
+        </section>
+
+        <section class="section">
+            <h2>Les ERP (Enterprise Resource Planning)</h2>
+            <p>Les ERP sont des systèmes logiciels qui permettent de gérer l’ensemble des processus d’une entreprise. Ils centralisent des informations clés telles que la comptabilité, les ressources humaines, la gestion des stocks, et plus encore. Leur principal objectif est d’intégrer toutes les fonctions de l’entreprise dans une seule plateforme, améliorant ainsi la productivité, la visibilité des données et la cohérence des processus.</p>
+            <h3>Nouveautés dans les ERP :</h3>
+            <ul>
+                <li><span>Cloud ERP :</span> Migration vers des solutions ERP basées sur le cloud, offrant une flexibilité et une accessibilité accrues.</li>
+                <li><span>Intelligence Artificielle (IA) :</span> Utilisation de l'IA pour optimiser les décisions en temps réel, comme la gestion des stocks ou les prévisions de vente.</li>
+                <li><span>Automatisation des processus :</span> Amélioration de l'efficacité par l'automatisation des tâches comme la gestion des factures et la planification de la production.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Les CRM (Customer Relationship Management)</h2>
+            <p>Les CRM sont des outils permettant de gérer et d'optimiser les relations avec les clients. Ils centralisent toutes les données sur les clients (interactions, achats, feedbacks) pour améliorer l'expérience client et augmenter les ventes.</p>
+            <h3>Nouveautés dans les CRM :</h3>
+            <ul>
+                <li><span>AI et Big Data :</span> Les CRM intègrent l'IA et l'analyse des données massives pour personnaliser les offres et prévoir les besoins clients.</li>
+                <li><span>Omnicanal :</span> Les CRM modernes centralisent les interactions clients sur plusieurs canaux (email, réseaux sociaux, chat, etc.), assurant une expérience fluide.</li>
+                <li><span>Solutions mobiles et Cloud :</span> Les CRM basés sur le cloud permettent un accès en temps réel aux informations clients, même en déplacement, via des applications mobiles.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Autres Outils en Entreprise</h2>
+            <p>En plus des ERP et CRM, il existe d'autres systèmes comme les HRM (Human Resource Management) et SRM (Supplier Relationship Management) qui aident à gérer les ressources humaines et les relations avec les fournisseurs, respectivement.</p>
+            <h3>Nouveautés dans les autres outils :</h3>
+            <ul>
+                <li><span>Automatisation RH :</span> Les outils comme Workday et BambooHR automatisent la gestion des performances, des congés et du recrutement.</li>
+                <li><span>Business Intelligence (BI) :</span> Les entreprises utilisent des outils BI pour analyser des données complexes et prendre des décisions stratégiques basées sur des faits.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Tendances Générales dans les ERP, CRM et Outils Associés</h2>
+            <p>Les entreprises cherchent à intégrer de plus en plus leurs systèmes ERP et CRM pour unifier la gestion des données et offrir une meilleure expérience client. Les tendances actuelles incluent :</p>
+            <ul>
+                <li><span>Intégration des systèmes :</span> Une intégration fluide entre les ERP, CRM et autres outils est essentielle pour assurer une gestion cohérente et efficace des processus.</li>
+                <li><span>Priorité à la sécurité et à la conformité :</span> La protection des données est au cœur des préoccupations des entreprises, avec des outils de gestion garantissant la conformité avec des réglementations comme le RGPD.</li>
+                <li><span>Interfaces utilisateurs simplifiées :</span> Les systèmes ERP et CRM sont de plus en plus faciles à utiliser, avec des interfaces intuitives pour améliorer l’adoption par les utilisateurs non techniques.</li>
+            </ul>
+        </section>
+    </section>
+
+    <footer>
+        <p>Veille Informatique - 2025</p>
+    </footer>
+
 </body>
 </html>
