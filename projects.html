@@ -65,10 +65,22 @@
             justify-content: center;
             align-items: center;
             font-size: 18px;
+            transition: transform 0.3s;
         }
-        .timeline-date {
-            font-weight: bold;
-            margin-bottom: 5px;
+        .timeline-icon a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .timeline-icon:hover {
+            transform: scale(1.1);
+            background: #003d80;
+        }
+        .project h2 a {
+            text-decoration: none;
+            color: #0056b3;
+        }
+        .project h2 a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -78,65 +90,55 @@
 
         <!-- Projet 1 -->
         <div class="project">
-            <h2>ALM/UFT - Test d'un logiciel sur bac à sable</h2>
-            <p>Ce projet consistait à tester et valider un logiciel à l'aide des outils ALM et UFT dans un environnement de bac à sable. Les étapes incluaient : la configuration de l'environnement, la rédaction des cas de tests, l'exécution des tests automatisés et l'analyse des résultats pour optimiser les performances du logiciel.</p>
+            <h2><a href="projet-alm-uft.html">ALM/UFT - Test d'un logiciel sur bac à sable</a></h2>
+            <p>Ce projet consistait à tester et valider un logiciel à l'aide des outils ALM et UFT dans un environnement de bac à sable.</p>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-icon">🔧</div>
-                    <div class="timeline-date">10/2024</div>
+                    <a href="details-environnement.html" class="timeline-icon">🔧</a>
                     <p>Préparation de l'environnement</p>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-icon">✍️</div>
-                    <div class="timeline-date">11/2024</div>
-                    <p>Début des test d'installation</p>
+                    <a href="details-installation.html" class="timeline-icon">✍️</a>
+                    <p>Début des tests d'installation</p>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-icon">🚀</div>
-                    <div class="timeline-date">02/2025</div>
-                    <p>Exécution des tests(simulation)</p>
+                    <a href="details-execution.html" class="timeline-icon">🚀</a>
+                    <p>Exécution des tests</p>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-icon">📊</div>
-                    <div class="timeline-date">05/2025</div>
-                    <p>Analyse des résultats en prod </p>
+                    <a href="details-analyse.html" class="timeline-icon">📊</a>
+                    <p>Analyse des résultats</p>
                 </div>
             </div>
         </div>
 
         <!-- Projet 2 -->
         <div class="project">
-            <h2>Déménagement de l'entreprise</h2>
-            <p>Ce projet majeur a impliqué la planification, la logistique et la mise en place des nouveaux locaux de l'entreprise. Chaque étape a été menée pour assurer une transition fluide et efficace.</p>
+            <h2><a href="projet-demenagement.html">Déménagement de l'entreprise</a></h2>
+            <p>Ce projet a impliqué la planification, la logistique et la mise en place des nouveaux locaux de l'entreprise.</p>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-icon">❓</div>
-                    <div class="timeline-date">01/2022</div>
+                    <a href="details-lancement.html" class="timeline-icon">❓</a>
                     <p>Lancement du projet</p>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-icon">📅</div>
-                    <div class="timeline-date">10/2022</div>
+                    <a href="details-planification.html" class="timeline-icon">📅</a>
                     <p>Organisation et planification</p>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-icon">💼</div>
-                    <div class="timeline-date">05/2023</div>
+                    <a href="details-materiel.html" class="timeline-icon">💼</a>
                     <p>Commande du matériel</p>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-icon">🏢</div>
-                    <div class="timeline-date">10/2023</div>
+                    <a href="details-emmenagement.html" class="timeline-icon">🏢</a>
                     <p>Emménagement</p>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-icon">🔍</div>
-                    <div class="timeline-date">11/2023</div>
+                    <a href="details-verifications.html" class="timeline-icon">🔍</a>
                     <p>Vérifications et stabilisation</p>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-icon">📢</div>
-                    <div class="timeline-date">2024 →</div>
+                    <a href="details-maintenance.html" class="timeline-icon">📢</a>
                     <p>Maintenance et exploitation</p>
                 </div>
             </div>
