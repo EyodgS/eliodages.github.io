@@ -117,12 +117,14 @@
         .cv-image {
             position: fixed;
             right: 0;
-            top: 0;
-            width: 50%;  /* Ajuste la taille de l'image */
-            height: 100vh;
+            top: 20px; /* Décalage vers le bas pour ne pas toucher le haut de la page */
+            width: 50%;  /* Taille de l'image ajustée pour prendre la moitié de l'espace */
+            height: calc(100vh - 40px); /* La hauteur est ajustée pour correspondre au contenu de gauche */
             background-image: url('images/cv-image.png');
             background-size: cover;
             background-position: center;
+            margin-left: 20px; /* Espace de 20px à gauche de l'image pour ne pas toucher le contenu de gauche */
+            border-radius: 10px; /* Bordure arrondie si besoin */
         }
     </style>
 </head>
