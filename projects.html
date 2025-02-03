@@ -85,6 +85,57 @@
     </style>
 </head>
 <body>
+    <style>
+    .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 200px;
+        height: 100%;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .sidebar a {
+        display: block;
+        width: 80%;
+        padding: 15px;
+        margin: 10px 0;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #333;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+    }
+
+    .sidebar a:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+
+    .content {
+        margin-left: 220px;
+        padding: 20px;
+    }
+</style>
+
+<div class="sidebar">
+    <a href="index.html">Accueil</a>
+    <a href="studies.html">Études</a>
+    <a href="skills.html">Compétences</a>
+    <a href="projects.html">Projets</a>
+    <a href="watch.html">Veille</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<div class="content">
+
     <div class="container">
         <h1>Projets</h1>
 
@@ -143,6 +194,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </body>
 </html>
