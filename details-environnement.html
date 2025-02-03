@@ -71,4 +71,39 @@
         </div>
     </div>
 </body>
+    <style>
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 10px 40px;
+    }
+
+    .nav-arrow {
+        font-size: 40px;
+        color: #0056b3;
+        text-decoration: none;
+        transition: transform 0.2s, color 0.2s;
+    }
+
+    .nav-arrow:hover {
+        transform: scale(1.2);
+        color: #003d80;
+    }
+
+    .nav-hidden {
+        visibility: hidden;
+    }
+</style>
+
+<div class="nav-container">
+    <a href=projects.html" class="nav-arrow">&larr;</a>
+    <a href="details-installation.html" class="nav-arrow">&rarr;</a>
+</div>
+
 </html>
