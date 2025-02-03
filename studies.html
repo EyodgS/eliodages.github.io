@@ -16,12 +16,47 @@
             background-color: #F4F4F9;
             color: #4D4D4D;
             line-height: 1.6;
+            display: flex;
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            width: 80%;
+            padding: 15px;
+            margin: 10px 0;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #333;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .sidebar a:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
         }
 
         .container {
             max-width: 1100px;
             margin: 0 auto;
             padding: 20px;
+            margin-left: 220px; /* Décalage pour ne pas être sous la barre */
         }
 
         h1, h2 {
@@ -72,6 +107,17 @@
 </head>
 <body>
 
+    <!-- Menu latéral -->
+    <div class="sidebar">
+        <a href="index.html">Accueil</a>
+        <a href="studies.html">Études</a>
+        <a href="skills.html">Compétences</a>
+        <a href="projects.html">Projets</a>
+        <a href="watch.html">Veille</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Contenu principal -->
     <div class="container">
         <header>
             <h1>Elio Dages</h1>
