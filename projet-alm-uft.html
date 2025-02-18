@@ -9,33 +9,54 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #fff;
+            color: #000;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background: #f4f4f9;
+            padding: 20px;
+            height: 100vh;
+            box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .competence-list {
+            list-style: none;
+            padding: 0;
+        }
+        .competence-list li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .competence-list input {
+            margin-right: 10px;
         }
         .container {
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 50px;
+            padding: 40px;
+            flex-grow: 1;
         }
         .section {
-            background: #fff;
+            background: #f4f4f9;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 30px;
             padding: 20px;
         }
         .section h2 {
-            color: #0056b3;
+            color: #000;
         }
         .back-link {
             display: block;
             text-align: center;
             margin-top: 20px;
-            color: #0056b3;
+            color: #000;
             text-decoration: none;
             font-weight: bold;
         }
@@ -45,6 +66,22 @@
     </style>
 </head>
 <body>
+    <div class="sidebar">
+        <h2>Compétences Validées</h2>
+        <ul class="competence-list">
+            <li><input type="checkbox" checked> Recenser et identifier les ressources numériques</li>
+            <li><input type="checkbox" checked> Exploiter des référentiels, normes et standards</li>
+            <li><input type="checkbox" checked> Mettre en place et vérifier les niveaux d’habilitation</li>
+            <li><input type="checkbox" checked> Vérifier la continuité d’un service informatique</li>
+            <li><input type="checkbox" checked> Gérer des sauvegardes</li>
+            <li><input type="checkbox" checked> Analyser les objectifs et modalités d’un projet</li>
+            <li><input type="checkbox" checked> Planifier les activités</li>
+            <li><input type="checkbox" checked> Déployer un service</li>
+            <li><input type="checkbox" checked> Réaliser des tests d’intégration</li>
+            <li><input type="checkbox" checked> Mettre en œuvre des outils de veille</li>
+        </ul>
+    </div>
+
     <div class="container">
         <h1>ALM/UFT - Test d'un logiciel sur bac à sable</h1>
 
